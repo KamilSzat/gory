@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gory.MainPage" Title="" >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label Text="Domek w górach" TextColor="Gray" FontSize="40"/>
+            <Image
+                Source="https://zakopanedomki.com/baner/domki-w-gorach3.jpg"
+                HeightRequest="185"/>
+
+            <HorizontalStackLayout BackgroundColor="#008080" >
+                <Button
+          x:Name="CounterBtn1"  Text="Zapisz"  Clicked="OnSaveClicked" BackgroundColor="#008080"  Margin="10,0,0,0"/>
+                <Button
+          x:Name="CounterBtn2"   Text="Polub"  Clicked="OnLikeClicked" BackgroundColor="#008080"  Margin="10,0,0,0" />
+                <Button
+          x:Name="CounterBtn3"  Text="Usuń"  Clicked="OnDelateClicked" BackgroundColor="#008080"  Margin="10,0,0,0" />
+            </HorizontalStackLayout>
+            <Border AnchorX="20"/>
+            <StackLayout>
+            <Label x:Name="label2" Text="0 polubień" HorizontalOptions="Fill" />
+            </StackLayout>
+            
+            <Label Text="Opis"  />
+            <Label Text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych" TextColor="Grey"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
